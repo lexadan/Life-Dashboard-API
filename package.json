@@ -1,0 +1,61 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-specifier-resolution=node build/index.js",
+    "build": "tsc",
+    "dev": "nodemon"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src"
+    ],
+    "ext": "ts",
+    "exec": "ts-node --esm --experimental-specifier-resolution=node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lexadan/Life-Dashboard-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lexadan/Life-Dashboard-API/issues"
+  },
+  "homepage": "https://github.com/lexadan/Life-Dashboard-API#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard-with-typescript": "^39.1.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.3.1",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "nodemon": "^3.0.1",
+    "prettier": "3.1.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@google-cloud/firestore": "^7.1.0",
+    "@types/cors": "^2.8.16",
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.9.0",
+    "@types/swagger-ui-express": "^4.1.6",
+    "class-validator": "^0.14.0",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.10",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "swagger-ui-express": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "tsoa": "^5.1.1"
+  }
+}
