@@ -1,2 +1,3 @@
-google-auth.json
-env.local
+./google-auth.json
+./env.local
+./build
